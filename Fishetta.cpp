@@ -203,10 +203,9 @@ bool Fishetta::sendPushNotification(String text)
     client.println("\", \"message_type\" : \"text/plain\" }");
     client.println();
     client.stop();
-     send = true;
+    
   }
-  
-  else send = false;
+ 
 
-return send;
+return send = true; 
 }
