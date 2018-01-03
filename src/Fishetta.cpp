@@ -173,7 +173,7 @@ Library.
 
 #include <Fishetta.h>
 
-FishinoClient client;
+FishinoClient client; //create the client object
 
 Fishetta::Fishetta(const char * CHANNEL , const char * APIKEY ) {
   _serverName = serverName;
@@ -183,12 +183,12 @@ Fishetta::Fishetta(const char * CHANNEL , const char * APIKEY ) {
 
 bool Fishetta::sendPushNotification(String text)
 {
-	bool send;
+
   if (client.connect(_serverName, 80))
   {
-
+//Send data to the server
     client.print("POST /api/pushes/");
-    client.print("Stazione meteo");
+    client.print(CHANNEL);
     client.println("/ HTTP/1.1");
     client.print("Host: ");
     client.println(_serverName);
@@ -207,5 +207,5 @@ bool Fishetta::sendPushNotification(String text)
   }
  
 
-return send = true; 
+return  true; 
 }
