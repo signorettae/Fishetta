@@ -181,25 +181,23 @@ Library.
 
 #include <Fishino.h>
 
-class Fishetta
+class Fishetta //Creates the Fishetta class
 {
 	public:
 	
 	Fishetta(const char * CHANNEL  ,  const char * APIKEY );
 	
-const char* serverName  = "api.pushetta.com";
+        const char* serverName  = "api.pushetta.com"; //the server nawe wich will receive the requests
 
-	//	void sendPushNotification(void);
-bool  sendPushNotification(String text);
+	//void sendPushNotification(void);
+        bool  sendPushNotification(String text);
 	private:
-FishinoClient client; 
+        FishinoClient client; //creates the client object
 	const char * apikey  ; 
 	const char * channel  ;
  
-	
-const char* _serverName;
 	boolean lastConnected = false;
-	
+	const char* _serverName;
 	
 };
 
