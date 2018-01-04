@@ -188,7 +188,7 @@ bool Fishetta::sendPushNotification(String text)
   {
 //Send data to the server
     client.print("POST /api/pushes/");
-    client.print(CHANNEL);
+    client.print(channel);
     client.println("/ HTTP/1.1");
     client.print("Host: ");
     client.println(_serverName);
