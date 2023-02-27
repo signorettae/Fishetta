@@ -13,7 +13,7 @@ Since I've been using [Fishino](https://fishino.com/home.html) boards I wanted t
 
 I found a free service called [Pushetta](https://www.pushetta.com/) which allowed to send push notifications by sending  a simple HTTP request using their [API](https://web.archive.org/web/20191026083212/http://www.pushetta.com/pushetta-api/).
 
-On the [documentations](https://web.archive.org/web/20191026165325/http://www.pushetta.com/pushetta-docs) i found a code snipped for Arduino boards so i managed to write a Fishino library starting from it.
+On the [documentations](https://web.archive.org/web/20191026165325/http://www.pushetta.com/pushetta-docs) I found a code snipped for Arduino boards so i managed to write a Fishino library starting from it.
 
 ### A simple example
 
