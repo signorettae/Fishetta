@@ -187,7 +187,7 @@ class Fishetta //Creates the Fishetta class
 	
 	Fishetta(const char * CHANNEL  ,  const char * APIKEY );
 	
-        const char* serverName  = "api.pushetta.com"; //the server nawe wich will receive the requests
+        const char* serverName  = "api.pushetta.com"; //the server name which will receive the requests
 
 	//void sendPushNotification(void);
         bool  sendPushNotification(String text);
